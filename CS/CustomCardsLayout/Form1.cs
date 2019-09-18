@@ -7,6 +7,7 @@ namespace CustomCardsLayout
         public Form1()
         {
             InitializeComponent();
+            dashboardDesigner1.DataSourceOptions.ObjectDataSourceLoadingBehavior = DevExpress.DataAccess.DocumentLoadingBehavior.LoadAsIs;
             dashboardDesigner1.CreateRibbon();
 
             Dashboard dashboard = new Dashboard();

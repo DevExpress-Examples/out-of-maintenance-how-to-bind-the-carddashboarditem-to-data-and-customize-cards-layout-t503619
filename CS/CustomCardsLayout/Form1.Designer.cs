@@ -29,11 +29,15 @@
         private void InitializeComponent()
         {
             this.dashboardDesigner1 = new DevExpress.DashboardWin.DashboardDesigner();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardDesigner1)).BeginInit();
             this.SuspendLayout();
             // 
             // dashboardDesigner1
             // 
-            this.dashboardDesigner1.CustomDBSchemaProviderEx = null;
+            this.dashboardDesigner1.AllowMaximizeAnimation = true;
+            this.dashboardDesigner1.AllowMaximizeDashboardItems = true;
+            this.dashboardDesigner1.AllowPrintDashboard = true;
+            this.dashboardDesigner1.AllowPrintDashboardItems = true;
             this.dashboardDesigner1.DataSourceWizard.AvailableDataSourceTypes = ((DevExpress.DashboardWin.DashboardDesignerDataSourceType)((((((DevExpress.DashboardWin.DashboardDesignerDataSourceType.Sql | DevExpress.DashboardWin.DashboardDesignerDataSourceType.Olap) 
             | DevExpress.DashboardWin.DashboardDesignerDataSourceType.Object) 
             | DevExpress.DashboardWin.DashboardDesignerDataSourceType.EF) 
@@ -42,17 +46,18 @@
             this.dashboardDesigner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardDesigner1.Location = new System.Drawing.Point(0, 0);
             this.dashboardDesigner1.Name = "dashboardDesigner1";
-            this.dashboardDesigner1.Size = new System.Drawing.Size(1117, 639);
+            this.dashboardDesigner1.Size = new System.Drawing.Size(950, 595);
             this.dashboardDesigner1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1117, 639);
+            this.ClientSize = new System.Drawing.Size(950, 595);
             this.Controls.Add(this.dashboardDesigner1);
             this.Name = "Form1";
             this.Text = "Dashboard Designer";
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardDesigner1)).EndInit();
             this.ResumeLayout(false);
 
         }

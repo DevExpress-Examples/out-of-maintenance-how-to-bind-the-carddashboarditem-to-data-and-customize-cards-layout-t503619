@@ -1,56 +1,61 @@
 ﻿Namespace CustomCardsLayout
-    Partial Public Class Form1
-        ''' <summary>
-        ''' Required designer variable.
-        ''' </summary>
-        Private components As System.ComponentModel.IContainer = Nothing
+	Partial Public Class Form1
+		''' <summary>
+		''' Required designer variable.
+		''' </summary>
+		Private components As System.ComponentModel.IContainer = Nothing
 
-        ''' <summary>
-        ''' Clean up any resources being used.
-        ''' </summary>
-        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
-            End If
-            MyBase.Dispose(disposing)
-        End Sub
+		''' <summary>
+		''' Clean up any resources being used.
+		''' </summary>
+		''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+			If disposing AndAlso (components IsNot Nothing) Then
+				components.Dispose()
+			End If
+			MyBase.Dispose(disposing)
+		End Sub
 
-        #Region "Windows Form Designer generated code"
+		#Region "Windows Form Designer generated code"
 
-        ''' <summary>
-        ''' Required method for Designer support - do not modify
-        ''' the contents of this method with the code editor.
-        ''' </summary>
-        Private Sub InitializeComponent()
-            Me.dashboardDesigner1 = New DevExpress.DashboardWin.DashboardDesigner()
-            Me.SuspendLayout()
-            ' 
-            ' dashboardDesigner1
-            ' 
-            Me.dashboardDesigner1.CustomDBSchemaProviderEx = Nothing
-            Me.dashboardDesigner1.DataSourceWizard.AvailableDataSourceTypes = (CType((((((DevExpress.DashboardWin.DashboardDesignerDataSourceType.Sql Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Olap) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Object) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.EF) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Excel) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Extract), DevExpress.DashboardWin.DashboardDesignerDataSourceType))
-            Me.dashboardDesigner1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.dashboardDesigner1.Location = New System.Drawing.Point(0, 0)
-            Me.dashboardDesigner1.Name = "dashboardDesigner1"
-            Me.dashboardDesigner1.Size = New System.Drawing.Size(1117, 639)
-            Me.dashboardDesigner1.TabIndex = 0
-            ' 
-            ' Form1
-            ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
-            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1117, 639)
-            Me.Controls.Add(Me.dashboardDesigner1)
-            Me.Name = "Form1"
-            Me.Text = "Dashboard Designer"
-            Me.ResumeLayout(False)
+		''' <summary>
+		''' Required method for Designer support - do not modify
+		''' the contents of this method with the code editor.
+		''' </summary>
+		Private Sub InitializeComponent()
+			Me.dashboardDesigner1 = New DevExpress.DashboardWin.DashboardDesigner()
+			DirectCast(Me.dashboardDesigner1, System.ComponentModel.ISupportInitialize).BeginInit()
+			Me.SuspendLayout()
+			' 
+			' dashboardDesigner1
+			' 
+			Me.dashboardDesigner1.AllowMaximizeAnimation = True
+			Me.dashboardDesigner1.AllowMaximizeDashboardItems = True
+			Me.dashboardDesigner1.AllowPrintDashboard = True
+			Me.dashboardDesigner1.AllowPrintDashboardItems = True
+			Me.dashboardDesigner1.DataSourceWizard.AvailableDataSourceTypes = (CType((((((DevExpress.DashboardWin.DashboardDesignerDataSourceType.Sql Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Olap) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Object) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.EF) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Excel) Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Extract), DevExpress.DashboardWin.DashboardDesignerDataSourceType))
+			Me.dashboardDesigner1.Dock = System.Windows.Forms.DockStyle.Fill
+			Me.dashboardDesigner1.Location = New System.Drawing.Point(0, 0)
+			Me.dashboardDesigner1.Name = "dashboardDesigner1"
+			Me.dashboardDesigner1.Size = New System.Drawing.Size(950, 595)
+			Me.dashboardDesigner1.TabIndex = 0
+			' 
+			' Form1
+			' 
+			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+			Me.ClientSize = New System.Drawing.Size(950, 595)
+			Me.Controls.Add(Me.dashboardDesigner1)
+			Me.Name = "Form1"
+			Me.Text = "Dashboard Designer"
+			DirectCast(Me.dashboardDesigner1, System.ComponentModel.ISupportInitialize).EndInit()
+			Me.ResumeLayout(False)
 
-        End Sub
+		End Sub
 
-        #End Region
+		#End Region
 
-        Private dashboardDesigner1 As DevExpress.DashboardWin.DashboardDesigner
-    End Class
+		Private dashboardDesigner1 As DevExpress.DashboardWin.DashboardDesigner
+	End Class
 End Namespace
 
